@@ -1,0 +1,166 @@
+<DOCTYPE html>
+<html>
+<head>Payment Gateway</head>
+<body>
+<h1></h1>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+  <!-- Identify your business so that you can collect the payments. -->
+  <//--boleh Ubah email--//>
+  <input type="hidden" name="business" value="Admin_lfs@LFS.com">
+
+  <!-- Specify a Buy Now button. -->
+  <input type="hidden" name="cmd" value="_xclick">
+
+	  <!-- Specify details about the item that buyers will purchase. -->
+	  <!---Passenger--->
+	  <!---ubah dkt name dgn vallue-->
+		  <input type="hidden" name="item_name" value="Ticket">
+		  <input type="hidden" name="type" value="Passenger">
+		  <input type="hidden" name="standard" value="Langkawi to Penang">
+		  <input type="hidden" name="amount" value="60">
+		  <input type="hidden" name="currency_code" value="MYR">
+		  <input type="hidden" name="quantity"value="">
+		  <input type="hidden" name="fare"value="one">
+		  
+		  <input type="hidden" name="item_name" value="Ticket">
+		  <input type="hidden" name="type" value="Passenger">
+		  <input type="hidden" name="standard" value="Langkawi to Satun">
+		  <input type="hidden" name="amount" value="35">
+		  <input type="hidden" name="currency_code" value="MYR">
+		  <input type="hidden" name="quantity"value="">
+	      <input type="hidden" name="fare"value="">
+	  
+		  <input type="hidden" name="item_name" value="Ticket">
+		  <input type="hidden" name="type" value="Passenger">
+		  <input type="hidden" name="standard" value="Langkawi to Pulau Payar park">
+		  <input type="hidden" name="amount" value="50">
+		  <input type="hidden" name="currency_code" value="MYR">
+		  <input type="hidden" name="quantity"value="">
+		  <input type="hidden" name="fare"value="">
+		  
+		  <input type="hidden" name="item_name" value="Ticket">
+		  <input type="hidden" name="type" value="Passenger">
+		  <input type="hidden" name="standard" value="Langkawi to Kuala Kedah">
+		  <input type="hidden" name="amount" value="23">
+		  <input type="hidden" name="currency_code" value="MYR">
+		  <input type="hidden" name="quantity"value="">
+		  <input type="hidden" name="fare"value="">
+		  
+		  <input type="hidden" name="item_name" value="Ticket">
+		  <input type="hidden" name="type" value="Passenger">
+		  <input type="hidden" name="standard" value="Langkawi to Kuala Perlis">
+		  <input type="hidden" name="amount" value="18">
+		  <input type="hidden" name="currency_code" value="MYR">
+		  <input type="hidden" name="quantity"value="">
+		  <input type="hidden" name="fare"value="">
+		  
+	  <!----Two WAy--->
+	    <input type="hidden" name="item_name" value="Ticket">
+		  <input type="hidden" name="type" value="Passenger">
+		  <input type="hidden" name="standard" value="Langkawi to Penang (Two Way) ">
+		  <input type="hidden" name="amount" value="120">
+		  <input type="hidden" name="currency_code" value="MYR">
+		  <input type="hidden" name="quantity"value="">
+			<input type="hidden" name="fare"value="">
+			
+		  <input type="hidden" name="item_name" value="Ticket">
+		  <input type="hidden" name="type" value="Passenger">
+		  <input type="hidden" name="standard" value="Langkawi to Satun (Two Way)">
+		  <input type="hidden" name="amount" value="70">
+		  <input type="hidden" name="currency_code" value="MYR">
+		  <input type="hidden" name="quantity"value="">
+		  <input type="hidden" name="fare"value="">
+	  
+		  <input type="hidden" name="item_name" value="Ticket">
+		  <input type="hidden" name="type" value="Passenger">
+		  <input type="hidden" name="standard" value="Langkawi to Pulau Payar park (Two Way)">
+		  <input type="hidden" name="amount" value="100">
+		  <input type="hidden" name="currency_code" value="MYR">
+		  <input type="hidden" name="quantity"value="">
+		  <input type="hidden" name="fare"value="">
+		  
+		  <input type="hidden" name="item_name" value="Ticket">
+		  <input type="hidden" name="type" value="Passenger">
+		  <input type="hidden" name="standard" value="Langkawi to Kuala Kedah (Two Way)">
+		  <input type="hidden" name="amount" value="46">
+		  <input type="hidden" name="currency_code" value="MYR">
+		  <input type="hidden" name="quantity"value="">
+		  <input type="hidden" name="fare"value="">
+		  
+		  <input type="hidden" name="item_name" value="Ticket">
+		  <input type="hidden" name="type" value="Passenger">
+		  <input type="hidden" name="standard" value="Langkawi to Kuala Perlis (Two Way)">
+		  <input type="hidden" name="amount" value="36">
+		  <input type="hidden" name="currency_code" value="MYR">
+		  <input type="hidden" name="quantity"value="">
+	  <input type="hidden" name="fare"value="">
+	  
+	 
+  <!-- Provide a drop-down menu option field. -->
+  <input type="hidden" name="on0" value="Type">Type of class Ferry Ticket <br />
+  <select name="os0">
+    <option value="Select Type">-- Select Type --</option>
+    <option value="type">Passenger</option>
+    <option value="type">Currier</option>
+<br />	
+  </select> 
+ <!---option value ubah--->
+<!------Provide Location for passenger----->
+		<br><input type="hidden" name="on0" value="Type">Location <br />
+		  <select name="os0">
+				<option value="Select Type">-- Select Type --</option>
+				<option value="Standard">Langkawi to Penang </option>
+				<option value="standard">Langkawi to Satun</option>
+				<option value="standard">Langkawi to Pulau Layar park</option>
+				<option value="standard">Langkawi to Kuala Kedah</option>
+				<option value="standard">Langkawi to Kuala Perlis</option>
+				<option value="Standard">Langkawi to Penang(Two Way) </option>
+				<option value="standard">Langkawi to Satun(Two Way)</option>
+				<option value="standard">Langkawi to Pulau Layar park(Two Way)</option>
+				<option value="standard">Langkawi to Kuala Kedah(Two Way)</option>
+				<option value="standard">Langkawi to Kuala Perlis(Two Way)</option>
+		  </select>
+</br>
+<h1>Passenger</h1>
+<!----passenger only------>
+		<br><input type="hidden" name="on0" value="Type">Catergory <br />
+		  <select name="os0">
+				<option value="Select Type">-- Select Type --</option>
+				<option value="fare" name >One Way</option>
+				<option value="fare" name >Two Way</option>
+				</select>
+			</br>
+ 
+ <!----Choose Quantity---->
+ <br>
+	 <tr><td>No of Passenger:</td></tr>
+	 <td><input type="text" name="quantity" value=""></td>
+	 </br>
+	  <br>
+	 <!----Fare---->
+ <br><input type="hidden" name="on0" value="Type">Payment <br />
+		  <select name="os0">
+			<option value="Select Type">-- Select Type --</option>
+			<option value="amount">Langkawi to Penang RM 60</option>
+			<option value="amount">Langkawi to Satun RM 35</option>
+			 <option value="amount">Langkawi to Pulau Payar park RM 50</option>
+			 <option value="amount">Langkawi to Kuala Kedah RM 23</option>
+			 <option value="amount">Langkawi to Kuala Perlis RM 18</option> 
+		
+			
+		 
+		 </select>
+</br>
+
+
+  <!-- Display the payment button. -->
+  <input type="image" name="submit" border="0"
+    src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_buynow_107x26.png"
+    alt="Buy Now">
+
+  <img alt="" border="0" width="1" height="1"
+  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</body>
+</html>
